@@ -1,78 +1,119 @@
 # My Capstone Personal Portfolio & Blog
 
-## Project Overview
+## Personal Portfolio & Blog
 
-This project is a personal portfolio and blog website designed to showcase my creative and technical work in one place. The website will provide separate sections for my artwork, web development projects, and books that I have written.
+A personal portfolio and blog website built with **Next.js** and **React**. The site allows me to showcase and manage my books, artwork, and web development projects.
 
-The goal is to create a simple, organized website where visitors can quickly browse my work and choose what they would like to explore in more detail.
+## Features
 
-## Main Sections
+- 📚 Books section
+- 🎨 Artwork section
+- 💻 Web Projects section
+- 🃏 Interactive flip cards
+- 🖼️ Images for each portfolio item
+- ✏️ Create, Read, Update, and Delete (CRUD) content
+- 🔗 Links to external books and projects
+- 🔐 Admin dashboard for managing content
+- 📱 Responsive design
 
-### Artwork
-
-The Artwork section will display my artwork in a visual gallery. Each piece will have a thumbnail or small preview image along with a title and short description.
-
-Selecting an artwork card will open a page containing the full image and additional information about the piece.
-
-### Web Projects
-
-The Projects section will showcase websites, applications, databases, and other development projects I have created.
-
-Each project will have a small image or icon, project title, and short summary. Selecting the project will either open a detailed project page or take the visitor to the project's live website.
-
-### Books
-
-The Books section will showcase books and stories I have written.
-
-Each book will have a cover image, title, and short summary. Selecting a book will open a page containing additional information such as the synopsis, genre, series information, and available reading or purchase links.
-
-## Site Navigation
-
-The main navigation will include:
-
-- Home
-- Artwork
-- Projects
-- Books
-- About
-
-## Content Cards
-
-Artwork, projects, and books will be displayed using reusable cards.
-
-Each card may contain:
-
-- Thumbnail, cover, or icon
-- Title
-- Short description
-- Category or type
-- Link to additional information
-
-The cards will provide a simple way for visitors to browse the site without displaying too much information at once.
-
-## Technology
-
-The initial website will be built using:
+## Tech Stack
 
 - Next.js
 - React
 - TypeScript
-- CSS
+- Tailwind CSS
+- Prisma
+- PostgreSQL
 
-The first version of the website will store portfolio information in simple data files. A database and administration system may be added later to allow new artwork, projects, and books to be added through the website.
+## Project Structure
 
-## Future Features
+```text
+app/            # Application pages and routes
+components/     # Reusable React components
+actions/        # Server actions and CRUD operations
+lib/             # Database and utility functions
+prisma/          # Database schema
+public/          # Static images and files
+types/           # TypeScript types
+```
 
-Possible future additions include:
+## Getting Started
 
-- Admin dashboard
-- Create and edit posts
-- Image uploads
-- Search
-- Categories and tags
-- Featured projects
-- Book series pages
-- Artwork galleries
-- Project development notes
-- Dark mode
-- Contact page
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Navigate into the project:
+
+```bash
+cd my-portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open your browser and visit:
+
+```text
+http://localhost:3000
+```
+
+## Environment Variables
+
+Create a `.env` file in the root of the project.
+
+Example:
+
+```env
+DATABASE_URL="your-database-connection-string"
+```
+
+## Main Sections
+
+### Books
+
+Showcase books that I have written. Each book can include:
+
+- Title
+- Cover image
+- Summary
+- Description
+- Link to the book
+
+### Artwork
+
+Showcase artwork and creative work. Each piece can include:
+
+- Title
+- Image
+- Summary
+- Description
+- Medium
+- Link to the artwork
+
+### Web Projects
+
+Showcase websites and applications that I have created. Each project can include:
+
+- Project name
+- Image
+- Summary
+- Description
+- Live website URL
+- GitHub repository URL
+- Technologies used
+
+## License
+
+This project is for my personal portfolio and is not currently licensed for redistribution.
